@@ -1,6 +1,7 @@
 package com.caro.sharedpreferences
 
 import android.content.Context
+import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -63,5 +64,8 @@ class MainActivity : AppCompatActivity() {
 
         txtUsurio?.text=user
         txtPass?.text=pass
+
+        val intent=Intent(this, Mensaje_SharedPreferences::class.java)
+        startActivity(intent)
     }
 }
